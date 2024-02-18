@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile {
+    text-align: center;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+/* 默认背景 */
+body {
+    background-image: url(default-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* 禁止背景图片重复 */
+    /* 其他样式 */
+}
+
+/* 在小屏幕（手机）上显示不同的背景 */
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url(mobile-background.jpg);
+        background-repeat: no-repeat; 
+       background-size: cover;
+        background-position: center /* 居中显示 */
+        /* 其他样式 */
+    }
+}

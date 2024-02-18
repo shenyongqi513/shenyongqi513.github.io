@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShenYongqi(申勇琦) Web Official</title>
+    <link rel="stylesheet" href="styles.css">
+
+<!-- 欢迎模态框 -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Welcome to my home page</h2>
+        <p>感谢访问我的个人主页。</p>
+    </div>
+</div>
+
+<style>
+    /* 模态框样式 */
+    .modal {
+        display: none; /* 默认隐藏 */
+        position: fixed; /* 固定定位，覆盖整个视口 */
+        z-index: 1; /* 在顶层显示 */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto; /* 允许滚动 */
+        background-color: rgba(0,0,0,0.5); /* 设置半透明的黑色背景 */
+    }
+
+    /* 模态框内容样式 */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 400px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    /* 模态框关闭按钮样式 */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    // 获取模态框和关闭按钮
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
+
+    // 当页面加载完成后显示模态框
+    window.onload = function() {
+        modal.style.display = "block";
+    };
+
+    // 当用户点击关闭按钮时隐藏模态框
+    span.onclick = function() {
+        modal.style.display = "none";
+    };
+
+    // 当用户点击模态框外部区域时隐藏模态框
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+</script>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="your-avatar.jpg" alt="Avatar" class="avatar">
+            <p>申勇琦/ShenYongqi</p>
+            <h1>个人介绍</h1>
+            <p>院校:上海海洋大学(本科)</p>
+            <p>专业:海洋科学</p>
+            <h2>联系方式</h2>
+            <p>:📧<a href="mailto:489845739@qq.com">489845739@qq.com</a></p>
+            <p>📞: <a href="tel:+8618317872751">+86 183 1787 2751</a></p>
+            <h2>社交媒体</h2>
+            <ul>
+                <li><a href="https://v.douyin.com/iNaDmHcs/"><img src="douyin-icon.png" alt="抖音"></a></li>
+                <li><a href="https://b23.tv/HWCVIYg"><img src="bilibili-icon.png" alt="哔哩哔哩"></a></li>
+                <li><a href="https://y.music.163.com/m/user?id=579357230"><img src="wangyiyun-icon.png" alt="网易云音乐"></a></li>
+                <li><a href="https://www.instagram.com/shenyongqi777?igsh=Y3FtNTJxM3RrN3Jx"><img src="instagram-icon.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
